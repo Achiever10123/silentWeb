@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My skills</title>
+    <link rel="skill" sizes="180x180" href="./skill.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./skill.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./skill.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      body {
+        background: linear-gradient(-25deg, rgb(27, 32, 120), darkgreen);
+      }
+      .skills-h1 {
+        color: rgb(27, 160, 98);
+        padding: 10px;
+        margin-bottom: 53px;
+        font-family: serif;
+        text-align: center;
+        font-size: 38px;
+      }
+      .skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 3%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      .skill-item {
+        height: 300px;
+        width: 50%;
+      }
+      .skill-box,
+      .skill-box-2 {
+        justify-content: center;
+        align-items: center;
+      }
+      .skill-box {
+        box-shadow: 1px 5px 20px rgb(166, 200, 199);
+        border-radius: 10px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        background: rgb(64, 69, 69);
+        color: white;
+        transition: 0.8s ease-in-out;
+        display: flex;
+      }
+      .skill-box:hover {
+        transform: translateX(-30px) translateY(7px);
+      }
+      .skill-box-2 {
+        box-shadow: 1px 4px 40px #4942aa;
+        border-radius: 10px;
+        height: 250px;
+        color: wheat;
+        display: flex;
+        transition: 0.9s ease-in-out;
+      }
+      .skill-box-2:hover {
+        transform: translateX(30px) translateY(7px);
+      }
+
+      h4 {
+        font-size: 28px;
+        text-align: center;
+        color: whitesmoke;
+        padding-bottom: 20px;
+      }
+      tr > th {
+        width: 50%;
+      }
+      td {
+        width: 30px;
+      }
+      tr {
+        align-items: center;
+        display: flex;
+        padding: 23px;
+        gap: 170px;
+        flex-direction: row;
+      }
+      th {
+        color: #1069bd;
+      }
+      footer {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 17px;
+        color: rgb(119, 186, 195);
+        padding-top: 73px;
+      }
+      .first thead tr th {
+        color: #000;
+      }
+      @media screen and (max-width: 1035px) {
+        .skills-container {
+          flex-direction: column-reverse;
+          gap: 3rem;
+          align-items: center;
+          justify-content: center;
+        }
+        footer {
+          display: none;
+        }
+        .skill-box,
+        .skill-box-2 {
+          margin-left: 12px;
+          width: 330px;
+        }
+        .skill-item {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+        .skill-box-2:hover,
+        .skill-box:hover {
+          transform: translateY(10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="skills">
+      <h1 class="skills-h1">My Skills</h1>
+      <div class="skills-container">
+        <div class="skill-item">
+          <h4>Digital Skills</h4>
+          <div class="skill-box">
+            <table class="first">
+              <thead>
+                <tr>
+                  <th>Skills</th>
+                  <th>Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coding</td>
+                  <td>75%..🤣</td>
+                </tr>
+                <tr>
+                  <td>Designing</td>
+                  <td>25%..😒</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Misc. Skills</h4>
+          <div class="skill-box-2">
+            <table class="second">
+              <tr>
+                <th>Skills</th>
+                <th>Rate</th>
+              </tr>
+              <tr>
+                <td>Gaming</td>
+                <td>50%...😒</td>
+              </tr>
+              <tr>
+                <td>Sleeping</td>
+                <td>70%...🤣</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer>©copyright 2024 Abdullateef AbdulBasit</footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Projects</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./cloud.png">
+    <link rel="icon" type="image/png" sizes="32x32"  href="./cloud.png">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./cloud.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+  </head>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+font-family: Helvetica, sans-serif;
+    }
+    body {
+      background-color: rgb(48, 47, 47);
+      z-index: 1;
+    }
+    p {
+      width: 50%;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 20px;
+      text-align: left;
+      color: white;
+    }
+    img:hover{
+scale: 1.1;
+    }
+    img {
+      border-radius: 50px;
+      height: 270px;
+      transition: 1.7s ease-in-out;
+      width: auto;
+      padding: 10px;
+    }
+    a {
+      text-decoration: underline;
+      color: wheat;
+      transition: .4s ease;
+    }
+    a:hover {
+text-decoration: none;    }
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      color: rgb(135, 199, 204);
+      padding-bottom: 15px;
+      padding-top: 10px;
+      transition: .5s ease;
+    }
+h1:hover{
+color: whitesmoke;}
+.project-container>p{
+  background-color: rgb(28, 28, 29);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 2.3s ease;
+  box-shadow: 1px 1px 30px rgb(177, 175, 175);
+}
+.project-container>p:hover{
+  background: transparent;
+  font-family: serif;
+  scale: 1.5;
+  box-shadow: 1px 1px 40px rgb(74, 85, 187);
+}
+    .project-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3%;
+      height: 80vh;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 3%;
+    }
+    .item {
+      width: 50%;
+    }
+    body::-webkit-scrollbar {
+      width: 12px;          
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: blue;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background-color: white; 
+      border-radius: 25px;      
+      border: 3.5px solid blue;
+    }
+    footer {
+      text-align: center;
+      padding-top: 100px;
+      font-weight: bolder;
+      font-size: 20px;
+      padding-bottom: 20px;
+      color: rgb(101, 225, 242);
+    }
+
+    @media screen and (max-width: 1080px) {
+
+     .container{
+      width: 100%;
+      display: flex;
+      padding: 2px;
+      flex-direction: column;
+     }
+     .item>img{
+      height: 200px;
+      width: auto;
+     }
+.item>p{
+  text-align: justify;
+  font-size: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.sc{
+  display: none;
+}
+    }
+  </style>
+  <body>
+    <h1 data-aos="fade-up">My projects</h1>
+    <div class="project-container">
+      <p data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+        This page contains some of the projects that I have done with basic
+        languages mainly HTML5, CSS(SCSS) and Javascript. Feel free to look at
+        them.
+      </p>
+    </div>
+    <div class="container">
+      <div class="item">
+        <p data-aos="fade-up"
+        data-aos-duration="3000">
+          <a target="_blank" href="calculator.html">Standard calculator</a>: This standard
+          calculator was programmed with HTML, CSS and Javascript. You can use
+          it to calculate basic arithmetics.
+        </p>
+      </div>
+      <div class="item">
+        <img data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" src="calc.png" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="item">
+        <img data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" src="DC.png" />
+      </div>
+      <div class="item">
+        <p data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <a target="_blank" href="clock.html">Digital clock</a>: It displays the current time
+          on your PC, regardless of the time zone you use.
+        </p>
+      </div>
+      
+    </div>
+
+    <div class="container">
+      <div class="item">
+        <p data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+          <a target="_blank" href="password.html">Password generator</a>: You can generate
+          thousands of free passwords to secure your acconts with this
+          Javascript made password generate. No Log-in required.
+        </p>
+      </div>
+      <div class="item">
+        <img data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" src="PG.png" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="item">
+        <img data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" src="tts.png" />
+      </div>
+      <div class="item">
+        <p data-aos="fade-up-right">
+          <a target="_blank" href="tts.html">Text-to-speech generator</a>: Locally generated
+          text to speech, does not require internet connection or sign up.
+        </p>
+      </div>
+      
+    </div>
+
+    <div class="container">
+      <div class="item">
+        <p data-aos="fade-up-right">
+          <a target="_blank" href="Sci-calculator.html">Scientific calculator</a>: Scientific
+          calculator to perform various semi-complex calculations.
+        </p>
+      </div>
+      <div class="item">
+        <table>
+          <tr>
+            <td><img data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500" src="SC1.png" /></td>
+            <td><img class="sc" data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1500" src="SC2.png" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="container">
+      <div class="item">
+        <img data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" src="./image.png" alt="">
+      </div>
+      <div class="item">
+        <p data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+          <a target="_blank" href="to-do.html">TO DO APP</a>:
+          You can schedule things you want to do with this to-do web app.
+        </p>
+      </div>
+    </div>
+    <footer>©copyright 2024 Abdullateef AbdulBasit</footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        duration: 2010,
+      }
+    );
+  </script>
+</html>

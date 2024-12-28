@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="icon" sizes="32x32" href="./contac-con.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in Touch</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: serif;
+      }
+      body {
+        background-color: rgb(179, 244, 222);
+      }
+      h1 {
+        top: 0;
+        color: rgb(26, 26, 26);
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      .heading {
+        padding-left: 30px;
+        padding-top: 20px;
+        color: rgb(186, 109, 8);
+        font-size: 25px;
+      }
+
+      .contact {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .cnt-content {
+        padding-top: 8rem;
+    }
+    .cnt-content form {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input {
+        width: 20rem;
+        outline: none;
+        border-radius: 10px;
+        border: 2px solid purple;
+        background-color: white;
+        padding: 1rem 1rem 1rem 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    input:focus {
+        background-color: greenyellow;
+    }
+    
+    textarea:focus {
+        background-color: yellow;
+    }
+    
+    .btn-2 {
+        background-color: purple;
+        border-radius: 15px;
+        border: 2px solid transparent;
+        outline: none;
+        padding: 1rem;
+        width: fit-content;
+        margin-top: 1.5rem;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .btn-2:hover {
+        background-color: transparent;
+        box-shadow: none;
+        border: 2px solid darkblue;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .btn-2:focus {
+        background-color: red;
+    }
+    
+    textarea {
+        resize: none;
+        outline: none;
+        border-radius: 10px;
+        border: 2px solid purple;
+        background-color: white;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    @media screen and (max-width: 450px) {
+      .content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+      }
+      input {
+          width: 100%;
+      }
+      textarea {
+          width: 15rem;
+      }
+  }
+  
+    </style>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <div class="heading">
+      <h4>Please fill the form below.*</h4>
+    </div>
+        <div class="cnt-content content">
+          <form action="https://formsubmit.co/silentzy97@gmail.com" method="POST" />
+              <div class="col_1">
+              <input type="text" id="fllname" name="fllname" placeholder="Full name" required>
+              <br>
+              <input type="email" id="email" name="email" placeholder="Email" required autocomplete="on">
+              <br>
+              <input type="tel" id="tel" name="tel" placeholder="Phone number">
+              <br>
+              <input type="text" id="desc" name="desc" placeholder="Description">
+              </div>
+              
+              <div class="col_2">
+              <textarea rows="8" cols="42" id="msg" name="msg" placeholder="Your Message">
+              </textarea>
+              <br>
+              <input class="btn-2" type="submit" value="Send Message">
+              </div>
+          </form>
+      </div>
+  </body>
+</html>
