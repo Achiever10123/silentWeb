@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="icon" sizes="32x32" href="./contac-con.ico" />
+    <link rel="icon" type="icon" sizes="32x32" href="./contact-con.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get in Touch</title>
     <style>
@@ -13,11 +13,11 @@
         font-family: serif;
       }
       body {
-        background-color: rgb(179, 244, 222);
+        background-color: #1d2b3a;
       }
       h1 {
         top: 0;
-        color: rgb(26, 26, 26);
+        color: rgb(86, 167, 198);
         font-size: 40px;
         text-align: center;
         padding-bottom: 10px;
@@ -25,7 +25,7 @@
       .heading {
         padding-left: 30px;
         padding-top: 20px;
-        color: rgb(186, 109, 8);
+        color: rgb(235, 136, 8);
         font-size: 25px;
       }
 
@@ -56,48 +56,27 @@
         padding: 1rem 1rem 1rem 0.5rem;
         margin-bottom: 1.5rem;
     }
-    
-    input:focus {
-        background-color: greenyellow;
-    }
-    
-    textarea:focus {
-        background-color: yellow;
-    }
-    
-    .btn-2 {
-        background-color: purple;
+    .sub {
+        background-color: brown;
         border-radius: 15px;
         border: 2px solid transparent;
         outline: none;
         padding: 1rem;
         width: fit-content;
         margin-top: 1.5rem;
-        color: white;
+        font-size: 17px;
+        color: wheat;
         transition: 0.3s ease-in-out;
     }
     
-    .btn-2:hover {
+    .sub:hover {
         background-color: transparent;
         box-shadow: none;
-        border: 2px solid darkblue;
+        border: 2px solid #00dfc4;
         cursor: pointer;
-        color: black;
+        color: white;
     }
-    
-    .btn-2:focus {
-        background-color: red;
-    }
-    
-    textarea {
-        resize: none;
-        outline: none;
-        border-radius: 10px;
-        border: 2px solid purple;
-        background-color: white;
-        padding-left: 5px;
-        padding-top: 5px;
-    }
+
     @media screen and (max-width: 450px) {
       .content {
           width: 100%;
@@ -105,14 +84,83 @@
           flex-direction: column;
           flex-wrap: wrap;
       }
-      input {
-          width: 100%;
-      }
+.cnt-content form{
+  flex-direction: column;
+}
       textarea {
           width: 15rem;
       }
   }
-  
+  .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.inputBox{
+    position: relative;
+    width: 250px;
+}
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  transition: 0.5s;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color:  rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+textarea:focus ~ span,
+.inputBox input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+textarea:focus ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+.inputBox input:valid,
+textarea:focus,
+.inputBox input:focus{
+    border: 1px solid #00dfc4;
+}
     </style>
   </head>
   <body>
@@ -122,22 +170,21 @@
     </div>
         <div class="cnt-content content">
           <form action="https://formsubmit.co/silentzy97@gmail.com" method="POST" />
-              <div class="col_1">
-              <input type="text" id="fllname" name="fllname" placeholder="Full name" required>
-              <br>
-              <input type="email" id="email" name="email" placeholder="Email" required autocomplete="on">
-              <br>
-              <input type="tel" id="tel" name="tel" placeholder="Phone number">
-              <br>
-              <input type="text" id="desc" name="desc" placeholder="Description">
+              <div class="field">
+                <div class="inputBox">
+                <input type="text" required="required" />
+                <span>Name</span>
               </div>
-              
-              <div class="col_2">
-              <textarea rows="8" cols="42" id="msg" name="msg" placeholder="Your Message">
-              </textarea>
-              <br>
-              <input class="btn-2" type="submit" value="Send Message">
+              <div class="inputBox">
+                <input type="email" required="required" />
+                <span>Your mail</span>
               </div>
+              <div class="inputBox">
+                <textarea rows="8" cols="33" type="text"></textarea>
+                <span>Message</span>
+              </div>
+              </div>
+              <input class="sub" type="submit" value="Send Message">
           </form>
       </div>
   </body>
