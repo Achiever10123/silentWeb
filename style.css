@@ -107,46 +107,17 @@ nav > a:hover {
   cursor: pointer;
   transform: translateX(-5px) translateY(-3px);
 }
-.hamburger {
-  display: flex;
-  display: none;
-  flex-direction: column;
-}
-.bar {
-  height: 2px;
-  width: 23px;
-  background-color: white;
-  margin-top: 4px;
-}
 @media screen and (max-width: 998px) {
   nav {
-    position: absolute;
+    position:absolute;
     top: 70px;
     right: 0;
-    height: 100vh;
     flex-direction: column;
-    background-color: rgb(179, 137, 137);
-    width: 100%;
+    display: flex;
     transition: 1s ease-in-out;
-    overflow: hidden;
     align-items: center;
-    transform: translateX(100%);
-  }
-  .hamburger {
-    display: block;
-    overflow: hidden;
   }
 
-  nav.hidden {
-    transform: translateX(0);
-    overflow: hidden;
-  }
-  header {
-    margin-bottom: 50px;
-  }
-  .home-item > img {
-    width: 100%;
-  }
 }
 
 .home-container {
