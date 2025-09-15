@@ -1,3 +1,37 @@
+.icon .fa-x-twitter {
+  color: #000;
+  font-weight: 300;
+  -webkit-text-stroke: 0.5px #000;
+}
+.icon .link i {
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+/* Brand colors for each icon */
+.icon .fa-linkedin {
+  color: #0077b5;
+}
+.icon .fa-telegram {
+  color: #229ed9;
+}
+.icon .fa-x-twitter {
+  color: #ffffff;
+}
+.icon .fa-whatsapp {
+  color: #25d366;
+}
+.icon .fa-github {
+  color: #fff;
+}
+.icon .fa-youtube {
+  color: #ff0000;
+}
+
+.icon .link i:hover {
+  transform: scale(1.2) rotate(-8deg);
+  filter: brightness(1.2);
+}
 :root {
   --acent-color: #8bc34a;
   --primary-color: #03a9f4;
@@ -26,7 +60,7 @@ body {
   font-size: 12px;
 }
 
-.logo>h1{
+.logo > h1 {
   font-family: monospace;
 }
 
@@ -36,7 +70,7 @@ header {
   padding: 0 20px;
   display: flex;
   background: transparent;
-    backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -189,7 +223,8 @@ a {
 }
 
 @keyframes floatUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   50% {
