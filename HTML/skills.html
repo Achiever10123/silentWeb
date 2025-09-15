@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <title>My skills</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/skill.png" />
+    <link rel="stylesheet" href="../CSS/Responsive-css.css">
+<link rel="stylesheet" href="../CSS/skills.css">
+  </head>
+  <body>
+
+    <header>
+      <div data-aos="fade-up" class="logo">
+        <h1>
+          <a href="../index.html">SILENT</a
+          ><span style="color: #03a9f4; font-size: 40px">.</span>
+        </h1>
+      </div>
+      <button class="mobile-menu-btn">☰</button>
+      <nav data-aos="fade-up" id="nav">
+        <a href="./about.html">About me</a>
+        <a href="../HTML/project.html"
+          >Projects</a
+        >
+        <a  style="border-bottom: 2px dotted #03a9f4; border-radius: 10px">Skills</a>
+        <a href="../HTML/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section id="skills">
+      <div class="container">
+          <h1>My Skills</h1>
+          <div class="row">
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">90%</div>
+                  <div class="progress-container">
+                      <strong>HTML</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="skill col-12 col-lg-6">
+                <div class="skills__percent">80%</div>
+                <div class="progress-container">
+                    <strong>CSS</strong>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">40%</div>
+                  <div class="progress-container">
+                      <strong>JavaScript</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 40%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">20%</div>
+                  <div class="progress-container">
+                      <strong>Photoshop</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 20%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">55%</div>
+                  <div class="progress-container">
+                      <strong>Wordpress</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 55%"></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="skill col-12 col-lg-6">
+                <div class="skills__percent">40%</div>
+                <div class="progress-container">
+                    <strong>Motion Design</strong>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill col-12 col-lg-6">
+              <div class="skills__percent">50%</div>
+              <div class="progress-container">
+                  <strong>Football</strong>
+                  <div class="progress">
+                      <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Testimonial section -->
+    <section id="testimonial" class="testimonial">
+      <h2><span>Testimonial </span>.</h2>
+      <div data-aos="flip-up" class="carousel">
+        <!-- Slides container -->
+        <div class="slides" id="slides">
+            <!-- Testimonial 1 -->
+            <div class="slide">
+                <p class="testimonial-text">"This is an amazing website! I loved working with you."</p>
+                <p class="testimonial-author">Emily R</p>
+                <p class="testimonial-role">CEO, GreenTech Inc.</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="slide">
+                <p class="testimonial-text">"Your work is outstanding and very professional. Highly recommended!"</p>
+                <p class="testimonial-author">Sophia L</p>
+                <p class="testimonial-role">Designer, NovaSparks Agency.</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="slide">
+                <p class="testimonial-text">"Great communication and timely delivery. Will work with you again!"</p>
+                <p class="testimonial-author">Mike Johnson</p>
+                <p class="testimonial-role">Founder, Brightside Software.</p>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="slide">
+                <p class="testimonial-text">"You exceeded my expectations. Thank you for your hard work!"</p>
+                <p class="testimonial-author">Micheal T</p>
+                <p class="testimonial-role">Manager, Shevron Inc.</p>
+            </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="navigation">
+            <button class="nav-btn" onclick="goToSlide(0)"></button>
+            <button class="nav-btn" onclick="goToSlide(1)"></button>
+            <button class="nav-btn" onclick="goToSlide(2)"></button>
+            <button class="nav-btn" onclick="goToSlide(3)"></button>
+        </div>
+    </div>
+     </section>
+
+  <script>
+    document
+      .querySelector(".mobile-menu-btn")
+      .addEventListener("click", function () {
+        document.querySelector("nav").classList.toggle("active");
+      });
+
+      // JavaScript for auto-sliding, manual navigation, and swipe functionality
+const slides = document.getElementById('slides');
+let startX = 0;
+let currentIndex = 0;
+const totalSlides = 4; // Total number of slides
+
+
+// Function to go to a specific slide
+function goToSlide(index) {
+    if (index < 0) index = totalSlides - 1; // Loop to last slide if index is negative
+    if (index >= totalSlides) index = 0; // Loop to first slide if index exceeds total slides
+    const slideWidth = slides.clientWidth;
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
+    currentIndex = index;
+}
+
+
+// Auto-slide every 4 seconds
+setInterval(() => {
+    goToSlide(currentIndex + 1);
+}, 5000);
+
+// Touch event handlers for swipe functionality
+slides.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slides.addEventListener('touchmove', (e) => {
+    e.preventDefault(); // Prevent default scrolling behavior
+});
+
+slides.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diffX = startX - endX;
+
+    if (diffX > 50 && currentIndex < totalSlides - 1) {
+        // Swipe left: go to next slide
+        goToSlide(currentIndex + 1);
+    } else if (diffX < -50 && currentIndex > 0) {
+        // Swipe right: go to previous slide
+        goToSlide(currentIndex - 1);
+    }
+});
+
+
+  </script>
+  </body>
+</html>

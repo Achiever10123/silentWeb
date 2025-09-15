@@ -1,0 +1,284 @@
+:root {
+  --acent-color: #8bc34a;
+  --primary-color: #03a9f4;
+  --secondary-color: #ffc107;
+  --text-color: rgba(255, 255, 255, 0.963);
+  --background-color: rgb(0, 0, 0);
+  --hover-color: #1a237e;
+  --random-color: lightblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background: var(--background-color);
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.logo > h1 {
+  font-family: monospace;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  background: transparent;
+  backdrop-filter: blur(9px);
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav > a {
+  border: none;
+  text-decoration: none;
+  display: flex;
+  transition: 0.7s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav > a:hover {
+  cursor: pointer;
+  transform: translateX(-5px) translateY(-3px);
+}
+
+nav > a:active {
+  font-weight: bold;
+}
+
+.logo > h1 > a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: monospace;
+}
+
+#skills {
+  padding: 7rem 2rem;
+}
+
+#skills h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-bottom: 4rem;
+  animation: hyy 6.2s ease infinite;
+}
+
+#skills .skill {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 2.6rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#skills .skill .skills__percent {
+  margin-right: 1.8rem;
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+#skills .skill .progress-container {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  font-size: 1.125rem;
+  color: var(--random-color);
+}
+
+#skills .skill .progress-container .progress {
+  border-radius: 0;
+  margin-top: 0.35rem;
+  background-color: #373737;
+}
+
+#skills .skill .progress-container .progress .progress-bar {
+  height: 1.125rem;
+  background-color: lightblue;
+}
+
+@media (max-width: 600px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    background: var(--background-color);
+    flex-direction: column;
+    align-items: center;
+    gap: 2;
+    left: 0;
+    padding: 10px 0;
+    display: none;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav > a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+
+.testimonial{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: var(--hover-color);
+  position: relative;
+  padding: 40px;
+  margin-bottom: 5%;
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  transition: transform 0.7s ease-in-out; /* Smooth slide transition */
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Testimonial text */
+.testimonial-text {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+/* Testimonial author */
+.testimonial-author {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--random-color);
+}
+
+/* Testimonial role/company */
+.testimonial-role {
+  font-size: 14px;
+  color: var(--random-color);
+}
+
+/* Navigation buttons */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background-color: var(--primary-color); /* Purple */
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--secondary-color); /* Darker purple */
+}
+
+.testimonial > h2 > span {
+  animation: hyy 7s ease infinite;
+}
+
+.testimonial>h2{
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+@keyframes hyy {
+  0% {
+    color: #0e12ed;
+  }
+  20% {
+    color: #0eed89;
+  }
+  40% {
+    color: #edc80e;
+  }
+  60% {
+    color: #ed0e0e;
+  }
+  80% {
+    color: #0eed28;
+  }
+  100% {
+    color: #ffffff;
+  }
+}

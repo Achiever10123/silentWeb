@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <link rel="stylesheet" href="../CSS/Responsive-css.css"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/profile.png" />
+    <script src="https://kit.fontawesome.com/aea47affd4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>
+          <a href="../index.html">SILENT</a
+          ><span style="color: #03a9f4; font-size: 40px">.</span>
+        </h1>
+            </div>
+      <button class="mobile-menu-btn">☰</button>
+      <nav id="nav">
+        <a href="./about.html">About me</a>
+        <a href="./project.html">Projects</a>
+        <a href="./skills.html">Skills</a>
+        <a style="border-bottom:2px dotted #03a9f4;border-radius: 10px;">Contact</a>
+      </nav>
+    </header>
+      <h4>Please fill the form below.*</h4>
+        <div class="cnt-content content">
+          <form action="https://formsubmit.co/d887f58e12e77a2590c7cfa997ff7adc" method="POST" />
+              <div class="field">
+                <div class="inputBox">
+                <input type="text" required="required" />
+                <span>Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="email" required="required" />
+                <span>Your mail</span>
+              </div>
+              <div class="inputBox">
+                <textarea rows="8" cols="33" type="text"></textarea>
+                <span>Message</span>
+              </div>
+              </div>
+              <input class="sub" type="submit" value="Send Message">
+          </form>
+      </div>
+
+      <section class="handle">
+        <div class="sos">
+          <i class="fa fa-google" style="color: brown; font-size:xx-large;" aria-hidden="true"></i>
+          <h2>Email</h2>
+          <p>silentzy97@gmail.com</p>
+          <a target="_blank" href="mailto:silentzy97@gmail.com?subject=We%20Would%20Like%20To%20Work%20With%20You&body=">Send a Mail</a>
+        </div>
+        <div class="sos">
+          <i class="fa fa-whatsapp" style="color: rgb(17, 176, 17); font-size:xx-large;" aria-hidden="true"></i>
+          <h2>WhatsApp</h2>
+          <p>08022587457</p>
+          <a target="_blank" href="https://wa.me/+2347041979439">Send a DM</a>
+        </div>
+        </div>
+        <div class="sos">
+          <i class="fa fa-instagram" style="color:pink; font-size:xx-large;" aria-hidden="true"></i>
+          <h2>Instagram</h2>
+          <p>@silent.dev</p>
+          <a target="_blank" href="https://www.instagram.com/innolearn_academy">Send a Message</a>
+        </div>
+        </div>
+          </section>
+          </body>
+      <script>
+        document
+          .querySelector(".mobile-menu-btn")
+          .addEventListener("click", function () {
+            document.querySelector("nav").classList.toggle("active");
+          });
+      </script>
+  </body>
+</html>

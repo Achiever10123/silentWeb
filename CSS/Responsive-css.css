@@ -1,0 +1,132 @@
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .home-container {
+      padding-top: 100px;
+    }
+    
+    nav {
+      gap: 15px;
+    }
+    
+    nav > a {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header {
+      height: 70px;
+      padding: 0 15px;
+    }
+    
+    .logo h1 {
+      font-size: 24px;
+    }
+    
+    .home-container {
+      flex-direction: column;
+      padding-top: 90px;
+      gap: 40px;
+    }
+    
+    .home-item {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .icon {
+      justify-content: center;
+    }
+    
+    .buttons {
+      margin: 30px auto 0;
+    }
+    
+    nav > a {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    nav {
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      background: var(--background-color);
+      flex-direction: column;
+      align-items: center;
+      gap: 2;
+      left:0;
+      padding: 10px 0;
+      display: none;
+      border-bottom: 1px solid var(--primary-color);
+    }
+    
+    nav.active {
+      display: flex;
+    }
+    
+    nav > a {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .handle{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .sos{
+      height: 180px;
+    width: 230px;
+    }
+  }
+
+  @media (max-width: 480px) {
+      .carousel{
+        width: 60%;
+        max-width: 500px;
+      }
+
+      header {
+      height: 60px;
+      padding: 0 10px;
+      z-index: 1;
+    }
+    
+    .logo h1 {
+      font-size: 20px;
+    }
+    
+    .home-item > h3 {
+      font-size: 20px;
+    }
+    
+    .paragraph {
+      font-size: 16px;
+    }
+    
+    .icon {
+      gap: 15px;
+    }
+    
+    .link > img {
+      width: 25px;
+    }
+    
+    .buttons {
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+      z-index: 0;
+    }
+
+    
+  }
