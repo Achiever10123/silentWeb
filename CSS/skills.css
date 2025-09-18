@@ -81,21 +81,22 @@ nav {
 }
 
 nav > a {
-  border: none;
-  text-decoration: none;
-  display: flex;
-  transition: 0.7s ease;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: var(--text-color);
-  background-color: transparent;
-  padding: 10px;
-  font-size: 18px;
+   border: none;
+    text-decoration: none;
+    display: flex;
+    transition: 0.7s ease;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
 }
 
 nav > a:hover {
-  cursor: pointer;
   transform: translateX(-5px) translateY(-3px);
+   text-decoration: none;
+   color: var(--text-color);
 }
 
 nav > a:active {
