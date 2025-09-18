@@ -5,7 +5,7 @@
 }
 .icon .link i {
   transition: color 0.3s, transform 0.3s;
-  cursor: pointer;
+  
 }
 
 /* Brand colors for each icon */
@@ -85,7 +85,6 @@ header {
   border: none;
   color: var(--text-color);
   font-size: 24px;
-  cursor: pointer;
   padding: 10px;
 }
 
@@ -108,7 +107,6 @@ nav > a {
 }
 
 nav > a:hover {
-  cursor: pointer;
   transform: translateX(-5px) translateY(-3px);
 }
 
