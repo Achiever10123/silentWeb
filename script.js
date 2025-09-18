@@ -9,3 +9,9 @@
       document.querySelector('nav').classList.remove('active');
     });
   });
+
+new Kursor({
+  type: 2,
+  color: '#ffffff',
+  removeDefaultCursor: true
+})
