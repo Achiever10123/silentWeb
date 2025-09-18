@@ -173,7 +173,7 @@ nav > a:active {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
   border-radius: 3rem;
   border-top: 5px solid var(--hover-color);
   border-bottom: 5px solid var(--hover-color);
@@ -193,10 +193,7 @@ nav > a:active {
   color: var(--text-color);
 }
 
-.box > p {
-  transition: 0.7s ease;
-  color: var(--primary-color);
-}
+
 
 .box:hover > h3 {
   color: var(--text-color);
