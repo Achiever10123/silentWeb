@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../CSS/Responsive-css.css">
 <link rel="stylesheet" href="../CSS/skills.css">
 <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -204,5 +206,31 @@ slides.addEventListener('touchend', (e) => {
     removeDefaultCursor: true
   });
 </script>
+
+<script>
+    document.querySelectorAll('.skill').forEach(skill => {
+  const percentDiv = skill.querySelector('.skills__percent');
+  const progressBar = skill.querySelector('.progress-bar');
+  const percent = parseInt(percentDiv.textContent);
+
+  // Animate progress bar
+  progressBar.style.width = '0%';
+  setTimeout(() => {
+    progressBar.style.width = percent + '%';
+  }, 300);
+
+  // Animate percent number
+  let current = 0;
+  const interval = setInterval(() => {
+    if (current < percent) {
+      current++;
+      percentDiv.textContent = current + '%';
+    } else {
+      clearInterval(interval);
+    }
+  }, 12);
+});
+</script>
+
   </body>
 </html>

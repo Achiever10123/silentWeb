@@ -29,6 +29,26 @@
   .logo > h1 {
     font-family: monospace;
   }
+
+  body::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #4e9103;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
   
   header {
     width: 100%;
